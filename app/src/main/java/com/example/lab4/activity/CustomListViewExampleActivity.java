@@ -6,7 +6,6 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.lab4.R;
-import com.example.lab4.adapter.LanguageAdapter;
 import com.example.lab4.model.Language;
 import java.util.ArrayList;
 import java.util.List;
