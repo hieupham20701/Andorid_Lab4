@@ -7,10 +7,8 @@ import android.widget.ListView;
 
 import com.example.lab4.adapter.CustomerGoodsAdapter;
 import com.example.lab4.model.Good;
-import com.example.lab4.model.Language;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lab4);
+        setContentView(R.layout.activity_main);
 
         lstGoods = findViewById(R.id.lstGoods);
 

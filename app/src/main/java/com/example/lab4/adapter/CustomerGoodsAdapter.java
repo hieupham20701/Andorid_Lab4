@@ -15,16 +15,16 @@ import java.util.ArrayList;
 
 public class CustomerGoodsAdapter extends BaseAdapter {
 
-    public CustomerGoodsAdapter(Context context, int layoutItem, ArrayList<Good> arrayList) {
-        this.context = context;
-        this.layoutItem = layoutItem;
-        this.arrayList = arrayList;
-    }
 
     Context context;
     int layoutItem;
     ArrayList<Good> arrayList;
 
+    public CustomerGoodsAdapter(Context context, int layoutItem, ArrayList<Good> arrayList) {
+        this.context = context;
+        this.layoutItem = layoutItem;
+        this.arrayList = arrayList;
+    }
 
     @Override
     public int getCount() {
@@ -45,11 +45,11 @@ public class CustomerGoodsAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         view = LayoutInflater.from(context).inflate(layoutItem,viewGroup, false);
-        TextView txtView = view.findViewById(R.id.txtView);
+        TextView txtView = view.findViewById(R.id.txtName);
         TextView txtShopName = view.findViewById(R.id.txtShopName);
         ImageView imgGoods = view.findViewById(R.id.imgGoods);
 
-        txtShopName.setText(arrayList.get(i).getName());
+        txtView.setText(arrayList.get(i).getName());
         txtShopName.setText(arrayList.get(i).getShopName());
         imgGoods.setImageResource(arrayList.get(i).getImageGoods());
 

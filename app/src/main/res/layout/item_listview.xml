@@ -9,31 +9,34 @@
         android:id="@+id/imgGoods"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ca_nau_lau" />
 
     <TextView
-        android:id="@+id/txtView"
-        android:layout_width="146dp"
-        android:layout_height="29dp"
+        android:id="@+id/txtName"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/btnChat"
-        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toEndOf="@+id/imgGoods"
         app:layout_constraintTop_toTopOf="@+id/imgGoods" />
 
     <TextView
         android:id="@+id/txtShopName"
-        android:layout_width="87dp"
-        android:layout_height="22dp"
+        android:layout_width="142dp"
+        android:layout_height="24dp"
         android:layout_marginTop="20dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="@+id/imgGoods"
-        app:layout_constraintStart_toStartOf="@+id/txtView"
-        app:layout_constraintTop_toBottomOf="@+id/txtView" />
+        app:layout_constraintEnd_toStartOf="@+id/btnChat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnChat"
